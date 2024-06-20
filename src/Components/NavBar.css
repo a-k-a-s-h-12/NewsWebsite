@@ -1,0 +1,48 @@
+.nav-bar {
+  background-color: black !important;
+  padding: 20px !important;
+  font-size: 18px !important;
+}
+
+.categories {
+  transition: height 0.3s ease;
+}
+
+.menu-container {
+  margin-left: 5px !important;
+}
+
+.menu-container li {
+  margin-left: 10px !important;
+  transition: transform 0.3s ease, text-decoration 0.3s ease !important; /* Ensure transitions are specified for all properties */
+}
+
+.menu-container li:hover {
+  transform: translateY(-3px) !important;
+  text-decoration: underline !important;
+}
+
+.menu-icon {
+  cursor: pointer !important;
+}
+
+@media (max-width: 1024px) {
+  .categories {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 10px;
+  }
+  .menu-container {
+    padding-left: 30px;
+    flex-direction: column;
+    /* padding-left: 100px; */
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-container li {
+    margin-left: 0 !important;
+  }
+}
